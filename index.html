@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Todo Application</title>
+        <meta
+            name="description"
+            content="A simple and efficient Todo Application to manage your tasks."
+        />
+        <meta
+            name="keywords"
+            content="Todo, Task Manager, Productivity, Todo Application, arbaz ansari project, arbaz ansari, arbazansari"
+        />
+        <meta name="author" content="Arbaz Ansari" />
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>My Todos</h1>
+            </header>
+            <main>
+                <div class="input-container">
+                    <input
+                        type="text"
+                        id="todo-input"
+                        autofocus="true"
+                        placeholder="Enter your todo"
+                        autocomplete="off"
+                    />
+                    <button id="add-task-btn">Add Task</button>
+                </div>
+
+                <section>
+                    <fieldset>
+                        <legend>Active Todos</legend>
+                        <ul id="active-todo-list"></ul>
+                    </fieldset>
+                </section>
+
+                <section>
+                    <fieldset>
+                        <legend>Completed Todos</legend>
+                        <ul id="completed-todo-list">
+                            <li>
+                                <span class="todo-text"
+                                    >Complete the project</span
+                                >
+                                <span class="todo-actions">
+                                    <button>❌</button>
+                                </span>
+                            </li>
+                        </ul>
+
+                        <div style="display: flex; justify-content: center">
+                            <button
+                                id="clear-completed-todos"
+                                style="display: none; cursor: pointer"
+                            >
+                                Clear ❌
+                            </button>
+                        </div>
+                    </fieldset>
+                </section>
+            </main>
+            <footer>
+                <p
+                    style="
+                        text-align: center;
+                        font-size: 12px;
+                        color: gray;
+                        font-weight: 200;
+                    "
+                >
+                    &copy; 2024 Your Name. All rights reserved.
+                </p>
+            </footer>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
